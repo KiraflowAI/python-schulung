@@ -1,0 +1,27 @@
+# 1. Extrahiere die ersten drei Buchstaben aus dem String "Python".
+print("Python"[:3])
+
+# 2. Extrahiere die letzten vier Zeichen aus dem String "Hello World!".
+print("Hello World!"[-4:])
+
+# 3. Drehe den String `"Katze"` um, indem du String-Slicing verwendest.
+print("Katze"[::-1])
+
+# 4. Extrahiere das Jahr aus einem vom Benutzer eingegebenen Datum im Format "TT.MM.JJJJ".
+datum = input("Gib ein Datum im Format TT.MM.JJJJ ein: ")
+year = datum[-4:]
+print(year)
+
+# 5. Formatiere ein Datum im Format TT.MM.JJJJ in das Format JJJJ-MM-TT.
+day, month = datum[:2], datum[3:5]
+print(f"Konvertiertes Datum: {year}-{month}-{day}")
+
+# 6. Schreibe ein Programm, das den Benutzer nach einem Wort fragt und prüft, ob es ein Palindrom ist (vorwärts und rückwärts gelesen dasselbe).
+
+word = input("Wort eingeben zur Palindromprüfung ")
+
+if word.lower() == word[::-1].lower():
+    print(f"{word} ist ein Palindrom.")
+else:
+    print(f"{word} ist kein Palindrom.")
+    

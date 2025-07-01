@@ -1,0 +1,36 @@
+#a) Was ist das Ergebnis des folgenden Codes. Versuche in 
+# eigenen Worten zu beschreiben, 
+# was der Code tut. Führe den Code mit dem Debugger aus.
+
+
+# result = 1
+# for sub_list in [[4,3,2], [5,6,7]]:
+#     subsum = 0
+#     for element in sub_list:
+#         subsum += element
+#     result *= subsum
+# print(result)
+
+
+# 1 * (4+3+2) * (5+6+7) = 1 * 9 * 18 = 162
+
+
+#b.) Schreibe Code, der die Liste 
+# [[1,2,3], [-3, 4, 6, 9, 3], [0], [4,4], []] durchläuft. 
+# Die Elemente jeder inneren Liste sollen multipliziert 
+# werden und diese Zwischenergebnisse dann addiert werden.
+
+
+super_list = [[1,2,3], [-3, 4, 6, 9, 3], [0], [4,4], []]
+result = 0
+for sub_list in super_list:
+    subprodukt = 1
+    for element in sub_list:
+        subprodukt *= element
+    if len(sub_list) == 0: # Wenn keine Elemente in der Liste sind, soll 0 als Summand genutzt werden, nicht 1.
+        subprodukt = 0
+    result += subprodukt
+print(result)
+
+
+#0+(1⋅1⋅2⋅3)+(1⋅(−3)⋅4⋅6⋅9⋅3)+(1⋅0)+(1⋅4⋅4)+0=0+6−1944+0+16+0=−1922

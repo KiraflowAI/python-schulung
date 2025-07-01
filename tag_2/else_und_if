@@ -1,0 +1,64 @@
+#zahl = 0.02
+
+#if zahl > 0:
+#    print('Die Zahl ist positiv')
+#else:
+#    print('Die Zahl ist nicht positiv')
+
+#else
+# Das else Keyword kann immer nach einem if-Block oder nach einem elif-Block 
+# (dazu kommen wir noch) gesetzt werden. Nach dem else folgt ein : und danach eine neue, eingerückte Zeile, also ein neuer Block. Der Code in diesem else Block wird genau dann ausgeführt, wenn die Vorangegangenen Prüfung in der if Zeile, zu False ausgewertet wurde.
+
+#zahl = 0
+
+#if zahl > 0:
+#    print('Die Zahl ist positiv.')
+#else:
+#    if zahl < 0:
+#        print('Die Zahl ist negativ.')
+#    else:
+#        print('Die Zahl ist null.')
+
+zahl = -5
+if zahl > 0:
+    print('Die Zahl ist positiv')
+elif zahl < 0:
+    print('Die Zahl ist negativ')
+else: 
+    print('Die Zahl ist null.')
+
+x = 1
+
+if x > 20:
+    print('x ist größer als 20')
+elif x > 10:
+    print('x ist größer als 10 aber kleiner oder gleich 20')
+else:
+    print('x ist 10 oder kleiner')
+
+alter = int(input('Bitte geben Sie Ihr Alter ein:'))
+
+if alter < 13:
+    print('Sie sind ein Kind')
+elif 13 <= alter < 20:
+    print('Sie sind ein Teenager')
+elif 20 <= alter < 65:
+    print('Sie sind ein Erwachsener.')
+
+print('Vielen Dank für die Angabe Ihres Alters')
+
+punktzahl = int(input('Bitte geben Sie die Punktzahl (0-100) ein:'))
+
+if 90 <= punktzahl:
+    print('Sehr gut')
+elif 80 <= punktzahl:
+    print('Gut')
+elif 70 <= punktzahl:
+    print('Befriedigend')
+elif 60 <= punktzahl:
+    print('Ausreichend')
+else:
+    print('Üngenügend')
+
+zahl = int(input('Bitte geben Sie eine Zahl zwischen 1 und 7 ein'))
+

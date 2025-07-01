@@ -1,0 +1,27 @@
+name = "Anna"
+alter = 25
+print(f"Hallo, mein Name ist {name} und ich bin {alter} Jahre alt.")
+
+a = 5
+b = 3
+print(f"Die Summe von {a} und {b} ist {a + b}.")
+
+# Doch damit nicht genug, man kann nach einem : 
+# in den {} auch diverse Anweisungen geben, 
+# um eine bestimmte Formatierung des Textes 
+# zu erwirken (daher auch der Name für f-Strings: formatted Strings)
+
+pi = 3.1415926535
+print (f'PI auf zwei Nachkommastellen gerundet: {pi:.2f}')
+
+betrag = 1000000
+print(f'Der Betrag beträgt {betrag:,} Euro.')
+#Man beachte, dass bei diesen Beispielen der Inhalt der Variablen immer unverändert bleibt. 
+# Nur die Anzeige des Inhalts wird angepasst.
+
+#Untersuchen Sie den folgenden Code. Was passiert durch das +?
+name = 'Carlos'
+greeting = 'Hallo' + name
+print(greeting) 
+print(name*3+greeting)
+
