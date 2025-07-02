@@ -53,7 +53,7 @@ if upload is not None:
 else:
     # Wenn keine Datei hochgeladen, Standard-CSV laden
     st.info("ℹ️ Keine Datei hochgeladen. Standard-Quiz wird verwendet.")
-    df = pd.read_csv("/Users/burcukiran/Desktop/Schulungen/python-schulung/tag_16/fragen.csv")
+    df = pd.read_csv("tag_16/fragen.csv")
 
 # Leeres Dictionary zum Speichern der Nutzerantworten vorbereiten
 antworten = {}
