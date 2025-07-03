@@ -79,12 +79,12 @@ with st.sidebar:                      # Alles in diesem Block erscheint in der S
     st.markdown("### Filter")         # Überschrift in der Sidebar
     
     # Button für starke Erdbeben, bei Klick filtere df auf Magnitude > 5
-    if st.button("🔴 Starke Erdbeben (Magnitude > 5)"):  
+    if st.button("🔴 Starke Erdbeben innerhalb der 30 Tage"):  
         # df[df["magnitude"] > 5] heißt: filtere alle Zeilen aus df, bei denen in Spalte "magnitude" der Wert größer als 5 ist
         df = df[df["magnitude"] > 5]
     
     # Button für schwache Erdbeben, bei Klick filtere df auf Magnitude <= 5
-    if st.button("🟢 Schwache Erdbeben (Magnitude <= 5)"):
+    if st.button("🟢 Schwache Erdbeben innerhalb 30 Tage"):
         df = df[df["magnitude"] <= 5]
 
 
