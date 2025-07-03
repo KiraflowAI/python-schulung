@@ -92,7 +92,7 @@ with st.sidebar:                      # Alles in diesem Block erscheint in der S
 
 
 # Titel der Seite
-st.title("Erdbeben Visualisierung")  # Groß und fett, ganz oben
+st.title("Erdbeben Monitoring")  # Groß und fett, ganz oben
 
 # Anzahl der Erdbeben bestimmen und anzeigen
 count_of_earthquakes = df.shape[0]  # .shape gibt (Anzahl Zeilen, Anzahl Spalten), [0] holt Anzahl der Zeilen (=Erdbeben)
