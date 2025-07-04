@@ -13,6 +13,7 @@ df = pd.DataFrame({
     "Vitamin C (mg)": [12, 9, 60, 50, 4],                              # Vitamin C Gehalt in mg
     "Herkunft": ["Deutschland", "Ecuador", "Spanien", "Italien", "Griechenland"],  # Herkunftsländer
     "Icon": ["🍎", "🍌", "🍓", "🍊", "🍇"],                             # Emoji passend zum Obst
+    "Obstfarbe": ["green", "yellow", "red", "orange", "purple"]
 })
 
 # Spaltenlayout mit zwei Spalten: linke Spalte doppelt so breit wie rechte
@@ -20,13 +21,13 @@ col1, col2 = st.columns([2, 1])
 
 # --- Balkendiagramm mit benutzerdefinierten Farben ---
 # Farbzuordnung: jedem Obst wird eine feste Farbe zugewiesen
-color_map = {
-    "Apfel": "green",
-    "Banane": "yellow",
-    "Erdbeere": "red",
-    "Orange": "orange",
-    "Traube": "purple"
-}
+# color_map = {
+#     "Apfel": "green",
+#     "Banane": "yellow",
+#     "Erdbeere": "red",
+#     "Orange": "orange",
+#     "Traube": "purple"
+# }
 
 # Erstelle Balkendiagramm mit Plotly Express
 fig = px.bar(
